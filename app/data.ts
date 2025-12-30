@@ -24,7 +24,7 @@ export const portfolioData = {
   },
   about: {
     summary:
-      "I am a Computer Science graduate from KIIT University (2025) with a CGPA of 7.93. I specialize in full-stack development using the React ecosystem and Python-based backends. My focus is on building zero-code platforms, online IDEs, and scalable web architectures.",
+      "I'm available for full-time roles & freelance projects. I thrive on crafting dynamic web applications, and delivering seamless user experiences.",
   },
   experience: [
     {
