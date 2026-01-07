@@ -39,8 +39,7 @@ about: `
 `,
 
   avatar: "https://i.ibb.co/cSTYyD2T/profile-portfolio.png",
-  ogImage:
-    "https://assets.chanhdai.com/images/screenshot-og-image-light.png?v=4",
+  ogImage: "/images/ogImage.JPG",
   namePronunciationUrl: "/audio/name.mp3",
   timeZone: "Asia/Kolkata",
   keywords: [
