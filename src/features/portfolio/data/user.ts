@@ -24,7 +24,7 @@ export const USER = {
     {
       title: "Full Stack Developer",
       company: "Vegapro.AI",
-      // website: "",
+      website: "",
     },
 
   ],
