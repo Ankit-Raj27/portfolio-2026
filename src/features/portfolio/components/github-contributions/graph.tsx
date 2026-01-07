@@ -68,7 +68,7 @@ export function GitHubContributionGraph({
                 {totalCount.toLocaleString("en")} contributions in {year} on{" "}
                 <a
                   className="font-medium underline underline-offset-4"
-                  href={`https://github.com/${GITHUB_USERNAME}`}
+                  href={`https://github.com/Ankit-Raj27`}
                   target="_blank"
                   rel="noopener"
                 >

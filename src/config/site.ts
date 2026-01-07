@@ -19,6 +19,7 @@ export const MAIN_NAV: NavItem[] = [
     title: "Portfolio",
     href: "/",
   },
+
   {
     title: "Blog",
     href: "/blog",
@@ -26,10 +27,10 @@ export const MAIN_NAV: NavItem[] = [
 ];
 
 export const GITHUB_USERNAME = "Ankit-Raj27";
-export const SOURCE_CODE_GITHUB_REPO = "xyz";
-export const SOURCE_CODE_GITHUB_URL = "https://github.com/Ankit-Raj27";
+export const SOURCE_CODE_GITHUB_REPO = "Ankit-Raj27/portfolio-2026";
+export const SOURCE_CODE_GITHUB_URL = "https://github.com/Ankit-Raj27/portfolio-2026";
 
-export const SPONSORSHIP_URL = "https://github.com/sponsors/ncdai";
+export const SPONSORSHIP_URL = "https://github.com/sponsors/Ankit-Raj27";
 
 export const UTM_PARAMS = {
   utm_source: "chanhdai.com",
