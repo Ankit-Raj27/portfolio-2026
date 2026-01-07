@@ -24,7 +24,7 @@ export const USER = {
     {
       title: "Full Stack Developer",
       company: "Vegapro.AI",
-      website: "https://simplamo.com?ref=IN-926722",
+      // website: "",
     },
 
   ],
