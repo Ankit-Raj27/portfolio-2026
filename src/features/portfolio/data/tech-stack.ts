@@ -20,12 +20,6 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Language"],
   },
   {
-    key: "php",
-    title: "PHP",
-    href: "https://www.php.net/",
-    categories: ["Language"],
-  },
-  {
     key: "java",
     title: "Java",
     href: "https://www.java.com/",
@@ -77,24 +71,10 @@ export const TECH_STACK: TechStack[] = [
     theme: true,
   },
   {
-    key: "base-ui",
-    title: "Base UI",
-    href: "https://base-ui.com/",
-    categories: ["Library", "Component Library"],
-    theme: true,
-  },
-  {
     key: "motion",
     title: "Motion",
     href: "https://motion.dev/",
     categories: ["Library", "Animation"],
-  },
-  {
-    key: "tanstack",
-    title: "TanStack",
-    href: "https://tanstack.com/",
-    categories: ["Library"],
-    theme: true,
   },
   {
     key: "mobx-state-tree",

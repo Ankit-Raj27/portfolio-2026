@@ -16,7 +16,8 @@ export function PostItem({
 }) {
   return (
     <Link
-      href={`/blog/${post.slug}`}
+      href={post.metadata.link || `/blog/${post.slug}`}
+      target={post.metadata.link ? "_blank" : "_self"}
       className={cn(
         "group/post flex flex-col gap-2 p-2",
         "max-sm:screen-line-before max-sm:screen-line-after",

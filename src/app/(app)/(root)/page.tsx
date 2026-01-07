@@ -55,8 +55,6 @@ export default function Page() {
         {/* <Components />
         <Separator /> */}
 
-
-
         <Experiences />
         <Separator />
 

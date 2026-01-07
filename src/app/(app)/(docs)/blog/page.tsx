@@ -8,7 +8,7 @@ import { getAllPosts } from "@/features/blog/data/posts";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "A collection of articles on development, design, and ideas.",
+  description: "A collection of curiosities feeding my brain.",
 };
 
 export default function Page() {
@@ -17,7 +17,7 @@ export default function Page() {
   return (
     <div className="min-h-svh">
       <div className="screen-line-after px-4">
-        <h1 className="text-3xl font-semibold">Blog</h1>
+        <h1 className="text-3xl font-semibold">My current learnings</h1>
       </div>
 
       <div className="p-4">

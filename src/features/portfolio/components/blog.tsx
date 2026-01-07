@@ -15,7 +15,7 @@ export function Blog() {
     <Panel id="blog">
       <PanelHeader>
         <PanelTitle>
-          Blog
+          My current learnings
           <PanelTitleSup>({allPosts.length})</PanelTitleSup>
         </PanelTitle>
       </PanelHeader>

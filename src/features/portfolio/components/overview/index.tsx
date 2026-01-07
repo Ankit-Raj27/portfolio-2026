@@ -6,6 +6,8 @@ import {
   VenusIcon,
 } from "lucide-react";
 
+import { Icons } from "@/components/icons";
+
 import { USER } from "@/features/portfolio/data/user";
 import type { User } from "@/features/portfolio/types/user";
 import { urlToName } from "@/utils/url";
@@ -62,7 +64,35 @@ export function Overview() {
 
           <IntroItem>
             <IntroItemIcon>
-              <GlobeIcon />
+              <Icons.linkedin />
+            </IntroItemIcon>
+            <IntroItemContent>
+              <IntroItemLink
+                href={USER.linkedin}
+                aria-label={`LinkedIn: ${urlToName(USER.linkedin)}`}
+              >
+                {urlToName(USER.linkedin)}
+              </IntroItemLink>
+            </IntroItemContent>
+          </IntroItem>
+
+          <IntroItem>
+            <IntroItemIcon>
+              <Icons.x />
+            </IntroItemIcon>
+            <IntroItemContent>
+              <IntroItemLink
+                href={USER.twitter}
+                aria-label={`Twitter: ${urlToName(USER.twitter)}`}
+              >
+                {urlToName(USER.twitter)}
+              </IntroItemLink>
+            </IntroItemContent>
+          </IntroItem>
+
+          <IntroItem>
+            <IntroItemIcon>
+              <Icons.github />
             </IntroItemIcon>
             <IntroItemContent>
               <IntroItemLink

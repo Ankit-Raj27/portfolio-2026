@@ -1,0 +1,104 @@
+---
+title: NestJS — Build Scalable & Maintainable Backend Applications
+description: A complete guide to NestJS covering setup, architecture, modules, controllers, services, database integration, authentication, and best practices for building production-grade backend systems.
+image: /images/blogs/nest-og.png
+createdAt: 2026-01-08
+updatedAt: 2026-01-08
+---
+
+## Introduction
+
+**NestJS** is a progressive Node.js framework for building **efficient, scalable, and enterprise-grade server-side applications**. It is built with **TypeScript by default** and heavily inspired by Angular’s architecture patterns.
+
+Under the hood, NestJS runs on **Express** (the default) or optionally **Fastify**, giving you both performance and flexibility.
+
+If Express feels unstructured and Spring Boot feels heavy, NestJS fits perfectly in between.
+
+---
+
+## Why NestJS?
+
+- **Opinionated & Scalable Architecture**: organizing code into modules.
+- **Built-in Dependency Injection**: powerful container for decoupling components.
+- **First-class TypeScript Support**: leverage type safety and modern JS features.
+- **Testing**: easy setup for unit, integration, and e2e tests.
+- **Ecosystem**: rich ecosystem of packages for TypeORM, Mongoose, GraphQL, OpenAPI, etc.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm / pnpm / yarn
+
+### Install Nest CLI
+
+```bash
+npm install -g @nestjs/cli
+```
+
+### Create a New Project
+
+```bash
+nest new my-nest-project
+```
+
+### Run the Application
+
+```bash
+cd my-nest-project
+npm run start:dev
+```
+
+## Core Building Blocks
+
+### Modules
+
+Modules allow you to organize your application structure.
+
+```typescript
+import { Module } from '@nestjs/common';
+import { UsersModule } from './users/users.module';
+
+@Module({
+  imports: [UsersModule],
+})
+export class AppModule {}
+```
+
+### Controllers
+
+Controllers handle incoming requests and return responses.
+
+```typescript
+import { Controller, Get } from '@nestjs/common';
+
+@Controller('users')
+export class UsersController {
+  @Get()
+  findAll(): string {
+    return 'This action returns all users';
+  }
+}
+```
+
+### Providers (Services)
+
+Providers allow you to inject dependencies and abstract complex logic.
+
+```typescript
+import { Injectable } from '@nestjs/common';
+
+@Injectable()
+export class UsersService {
+  private readonly users = [];
+
+  create(user) {
+    this.users.push(user);
+  }
+
+  findAll() {
+    return this.users;
+  }
+}
+```

@@ -19,6 +19,10 @@ export type User = {
   email: string;
   /** Personal/homepage URL */
   website: string;
+  /** LinkedIn URL */
+  linkedin: string;
+  /** Twitter URL */
+  twitter: string;
   /** Primary/current role shown on profile */
   jobTitle: string;
   /** Work history entries */

@@ -31,6 +31,10 @@ export type PostMetadata = {
    * Last updated date as an ISO date string (e.g. YYYY-MM-DD).
    */
   updatedAt: string;
+  /**
+   * External link.
+   */
+  link?: string;
 };
 
 export type Post = {

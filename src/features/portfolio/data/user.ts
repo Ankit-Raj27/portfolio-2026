@@ -17,6 +17,8 @@ export const USER = {
   phoneNumber: "ODIxMDIyNjg2MQ==", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
   email: "YW5raXRyYWprMjdAZ21haWwuY29t", // base64 encoded
   website: "https://github.com/Ankit-Raj27/",
+  linkedin: "https://www.linkedin.com/in/ankit-raj-27/",
+  twitter: "https://twitter.com/switchengeek",
   jobTitle: "Full Stack Developer",
   jobs: [
     {

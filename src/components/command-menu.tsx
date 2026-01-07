@@ -19,8 +19,7 @@ import {
   SunMediumIcon,
   TextIcon,
   TextInitialIcon,
-  TriangleDashedIcon,
-  TypeIcon,
+
 } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -67,11 +66,6 @@ const MENU_LINKS: CommandLinkItem[] = [
     icon: ChanhDaiMark,
   },
   {
-    title: "Components",
-    href: "/components",
-    icon: Icons.react,
-  },
-  {
     title: "Blog",
     href: "/blog",
     icon: RssIcon,
@@ -83,11 +77,6 @@ const PORTFOLIO_LINKS: CommandLinkItem[] = [
     title: "About",
     href: "/#about",
     icon: TextInitialIcon,
-  },
-  {
-    title: "Testimonials",
-    href: "/#testimonials",
-    icon: QuoteIcon,
   },
   {
     title: "Tech Stack",
@@ -105,24 +94,9 @@ const PORTFOLIO_LINKS: CommandLinkItem[] = [
     icon: BoxIcon,
   },
   {
-    title: "Honors & Awards",
-    href: "/#awards",
-    icon: AwardIcon,
-  },
-  {
     title: "Certifications",
     href: "/#certs",
     icon: ShieldCheckIcon,
-  },
-  {
-    title: "Bookmarks",
-    href: "/#bookmarks",
-    icon: BookmarkIcon,
-  },
-  {
-    title: "Download vCard",
-    href: "/vcard",
-    icon: DownloadIcon,
   },
 ];
 
@@ -133,25 +107,6 @@ const SOCIAL_LINK_ITEMS: CommandLinkItem[] = SOCIAL_LINKS.map((item) => ({
   openInNewTab: true,
 }));
 
-const OTHER_LINK_ITEMS: CommandLinkItem[] = [
-  {
-    title: "Sponsors",
-    href: "/sponsors",
-    icon: HeartIcon,
-  },
-  {
-    title: "llms.txt",
-    href: "/llms.txt",
-    icon: FileTextIcon,
-    openInNewTab: true,
-  },
-  {
-    title: "RSS Feed",
-    href: "/rss",
-    icon: RssIcon,
-    openInNewTab: true,
-  },
-];
 
 export function CommandMenu({ posts }: { posts: Post[] }) {
   const router = useRouter();
@@ -309,13 +264,6 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
           />
 
           <CommandLinkGroup
-            heading="Components"
-            links={componentLinks}
-            fallbackIcon={Icons.react}
-            onLinkSelect={handleOpenLink}
-          />
-
-          <CommandLinkGroup
             heading="Blog"
             links={blogLinks}
             fallbackIcon={TextIcon}
@@ -327,46 +275,6 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
             links={SOCIAL_LINK_ITEMS}
             onLinkSelect={handleOpenLink}
           />
-
-          {/* <CommandGroup heading="Brand Assets">
-            <CommandItem
-              onSelect={() => {
-                handleCopyText(
-                  getMarkSVG(resolvedTheme === "light" ? "#000" : "#fff"),
-                  "Copied Mark as SVG"
-                );
-              }}
-            >
-              <ChanhDaiMark />
-              Copy Mark as SVG
-            </CommandItem>
-
-            <CommandItem
-              onSelect={() => {
-                handleCopyText(
-                  getWordmarkSVG(resolvedTheme === "light" ? "#000" : "#fff"),
-                  "Copied Logotype as SVG"
-                );
-              }}
-            >
-              <TypeIcon />
-              Copy Logotype as SVG
-            </CommandItem>
-
-            <CommandItem
-              onSelect={() => handleOpenLink("/blog/chanhdai-brand")}
-            >
-              <TriangleDashedIcon />
-              Brand Guidelines
-            </CommandItem>
-
-            <CommandItem asChild>
-              <a href="https://assets.chanhdai.com/chanhdai-brand.zip" download>
-                <DownloadIcon />
-                Download Brand Assets
-              </a>
-            </CommandItem>
-          </CommandGroup> */}
 
           <CommandGroup heading="Theme">
             <CommandItem
@@ -391,12 +299,6 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
               Auto
             </CommandItem>
           </CommandGroup>
-
-          <CommandLinkGroup
-            heading="Other"
-            links={OTHER_LINK_ITEMS}
-            onLinkSelect={handleOpenLink}
-          />
         </CommandList>
 
         <CommandMenuFooter />
@@ -493,16 +395,6 @@ function buildCommandMetaMap() {
   commandMetaMap.set("Dark", { commandKind: "command" });
   commandMetaMap.set("Auto", { commandKind: "command" });
 
-  commandMetaMap.set("Copy Mark as SVG", {
-    commandKind: "command",
-  });
-  commandMetaMap.set("Copy Logotype as SVG", {
-    commandKind: "command",
-  });
-  commandMetaMap.set("Download Brand Assets", {
-    commandKind: "command",
-  });
-
   SOCIAL_LINK_ITEMS.forEach((item) => {
     commandMetaMap.set(item.title, {
       commandKind: "link",
@@ -554,8 +446,8 @@ function postToCommandLinkItem(post: Post): CommandLinkItem {
 
   const IconComponent = isComponent
     ? (props: LucideProps) => (
-        <ComponentIcon {...props} variant={post.metadata.icon} />
-      )
+      <ComponentIcon {...props} variant={post.metadata.icon} />
+    )
     : undefined;
 
   return {
