@@ -3,17 +3,17 @@ export function ChanhDaiMark(props: React.ComponentProps<"svg">) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      viewBox="0 0 512 256"
+      viewBox="0 0 9 5"
       {...props}
     >
       <path
         fill="currentColor"
-        d="M192 256H64v-64h128v64ZM448 64H320v128h128v64H256V0h192v64ZM64 192H0V64h64v128ZM512 192h-64V64h64v128ZM192 64H64V0h128v64Z"
+        d="M1 0h2v1h-2zM0 1h1v4h-1zM3 1h1v4h-1zM1 2h2v1h-2zM5 0h1v5h-1zM6 0h2v1h-2zM8 1h1v1h-1zM6 2h2v1h-2zM7 3h1v1h-1zM8 4h1v1h-1z"
       />
     </svg>
   );
 }
 
 export function getMarkSVG(color: string) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 256 128"><path fill="${color}" d="M96 128H32V96h64v32ZM224 32h-64v64h64v32h-96V0h96v32ZM32 96H0V32h32v64ZM256 96h-32V32h32v64ZM96 32H32V0h64v32Z"/></svg>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 9 5"><path fill="${color}" d="M1 0h2v1h-2zM0 1h1v4h-1zM3 1h1v4h-1zM1 2h2v1h-2zM5 0h1v5h-1zM6 0h2v1h-2zM8 1h1v1h-1zM6 2h2v1h-2zM7 3h1v1h-1zM8 4h1v1h-1z"/></svg>`;
 }

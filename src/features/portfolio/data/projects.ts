@@ -59,6 +59,7 @@ export const PROJECTS: Project[] = [
 - Built analytics and submission tracking dashboards
 - Optimized read/write patterns for low-latency data access`,
     logo: "images/projects/codeomen.png",
+    isExpanded: true,
   },
 
 

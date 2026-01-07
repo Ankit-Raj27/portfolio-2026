@@ -328,7 +328,7 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
             onLinkSelect={handleOpenLink}
           />
 
-          <CommandGroup heading="Brand Assets">
+          {/* <CommandGroup heading="Brand Assets">
             <CommandItem
               onSelect={() => {
                 handleCopyText(
@@ -366,7 +366,7 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
                 Download Brand Assets
               </a>
             </CommandItem>
-          </CommandGroup>
+          </CommandGroup> */}
 
           <CommandGroup heading="Theme">
             <CommandItem

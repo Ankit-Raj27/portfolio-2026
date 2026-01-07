@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 
 export function ProfileCover() {
   return (
-    <BrandContextMenu>
       <div
         className={cn(
           "aspect-2/1 border-x border-edge select-none sm:aspect-3/1",
@@ -18,6 +17,5 @@ export function ProfileCover() {
           className="h-14 w-28 sm:h-16 sm:w-32"
         />
       </div>
-    </BrandContextMenu>
   );
 }
