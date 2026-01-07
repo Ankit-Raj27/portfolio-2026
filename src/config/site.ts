@@ -19,7 +19,11 @@ export const MAIN_NAV: NavItem[] = [
     title: "Portfolio",
     href: "/",
   },
-
+  {
+    title: "Resume",
+    href: "/resume.pdf",
+    external: true, // Indicate it's a file/external link if supported, though standard Link works too
+  },
   {
     title: "Blog",
     href: "/blog",

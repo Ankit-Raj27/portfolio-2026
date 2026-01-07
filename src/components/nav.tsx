@@ -18,7 +18,7 @@ export function Nav({
       data-active-id={activeId}
       className={cn("flex items-center gap-4", className)}
     >
-      {items.map(({ title, href }) => {
+      {items.map(({ title, href, external }) => {
         const active =
           activeId === href ||
           (href === "/" // Home page
@@ -26,7 +26,13 @@ export function Nav({
             : activeId?.startsWith(href));
 
         return (
-          <NavItem key={href} href={href} active={active}>
+          <NavItem
+            key={href}
+            href={href}
+            active={active}
+            target={external ? "_blank" : undefined}
+            rel={external ? "noopener noreferrer" : undefined}
+          >
             {title}
           </NavItem>
         );
