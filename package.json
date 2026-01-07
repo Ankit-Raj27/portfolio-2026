@@ -1,25 +1,21 @@
 {
-  "name": "chanhdai.com",
+  "name": "portfolio-2026",
   "version": "0.1.0",
   "description": "A minimal, pixel-perfect dev portfolio, component registry, and blog.",
   "homepage": "https://chanhdai.com",
   "license": "MIT",
   "author": {
-    "name": "Nguyen Chanh Dai",
-    "email": "dai@chanhdai.com",
-    "url": "https://github.com/ncdai"
+    "name": "Ankit Raj Kushwaha",
+    "email": "ankitraj.kushwaha@gmail.com",
+    "url": "https://github.com/Ankit-Raj27/"
   },
   "contributors": [
     {
-      "name": "Nguyen Chanh Dai",
-      "email": "dai@chanhdai.com",
-      "url": "https://github.com/ncdai"
+      "name": "Ankit Raj Kushwaha",
+      "email": "ankitraj.kushwaha@gmail.com",
+      "url": "https://github.com/Ankit-Raj27/"
     }
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ncdai/chanhdai.com.git"
-  },
   "scripts": {
     "dev": "next dev -p 1408",
     "build": "next build",

@@ -20,22 +20,14 @@ export const MAIN_NAV: NavItem[] = [
     href: "/",
   },
   {
-    title: "Components",
-    href: "/components",
-  },
-  {
     title: "Blog",
     href: "/blog",
   },
-  // {
-  //   title: "Sponsors",
-  //   href: "/sponsors",
-  // },
 ];
 
-export const GITHUB_USERNAME = "ncdai";
-export const SOURCE_CODE_GITHUB_REPO = "ncdai/chanhdai.com";
-export const SOURCE_CODE_GITHUB_URL = "https://github.com/ncdai/chanhdai.com";
+export const GITHUB_USERNAME = "Ankit-Raj27";
+export const SOURCE_CODE_GITHUB_REPO = "xyz";
+export const SOURCE_CODE_GITHUB_URL = "https://github.com/Ankit-Raj27";
 
 export const SPONSORSHIP_URL = "https://github.com/sponsors/ncdai";
 

@@ -7,7 +7,7 @@ import { VerifiedIcon } from "./verified-icon";
 export function ProfileHeader() {
   return (
     <div className="screen-line-after flex border-x border-edge">
-      <div className="shrink-0 border-r border-edge">
+      <div className="shrink-0 border-r border-edge relative">
         <div className="mx-0.5 my-0.75">
           <img
             className="size-32 rounded-full ring-1 ring-border ring-offset-2 ring-offset-background select-none sm:size-40"
@@ -17,24 +17,45 @@ export function ProfileHeader() {
           />
         </div>
 
+        {/* 🇮🇳 Indian Flag */}
         <a
-          href="https://vietnam.gov.vn/about-viet-nam"
+          href="https://www.india.gov.in/explore-india/facts-of-india"
           target="_blank"
           rel="noreferrer"
           className="absolute top-0 -left-px"
         >
-          {/* Flag of Viet Nam */}
           <svg
             className="h-8 sm:h-9"
-            viewBox="0 0 30 20"
+            viewBox="0 0 3 2"
             xmlns="http://www.w3.org/2000/svg"
+            aria-label="Flag of India"
+            role="img"
           >
-            <title>Flag of Viet Nam</title>
-            <rect width="30" height="20" fill="#F00" />
-            <polygon
-              points="15,4 11.47,14.85 20.71,8.15 9.29,8.15 18.53,14.85"
-              fill="#FFEB00"
-            />
+            {/* Saffron */}
+            <rect width="3" height="0.6667" y="0" fill="#FF9933" />
+            {/* White */}
+            <rect width="3" height="0.6667" y="0.6667" fill="#FFFFFF" />
+            {/* Green */}
+            <rect width="3" height="0.6667" y="1.3334" fill="#138808" />
+
+            {/* Ashoka Chakra */}
+            <g transform="translate(1.5 1)">
+              <circle r="0.2" fill="none" stroke="#000080" strokeWidth="0.02" />
+              <circle r="0.01" fill="#000080" />
+
+              <g stroke="#000080" strokeWidth="0.01">
+                {Array.from({ length: 24 }).map((_, i) => (
+                  <line
+                    key={i}
+                    x1="0"
+                    y1="0"
+                    x2="0"
+                    y2="-0.2"
+                    transform={`rotate(${i * 15})`}
+                  />
+                ))}
+              </g>
+            </g>
           </svg>
         </a>
       </div>
