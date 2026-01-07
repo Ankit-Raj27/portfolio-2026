@@ -29,7 +29,7 @@ export type User = {
   jobs: {
     title: string;
     company: string;
-    // website: string;
+    website?: string;
   }[];
   /** Rich about section; supports Markdown */
   about: string;
